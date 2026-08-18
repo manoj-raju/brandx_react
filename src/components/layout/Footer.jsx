@@ -1,4 +1,4 @@
-export function Footer({ data, onAdminOpen }) {
+export function Footer({ data }) {
   const go = (id) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   const f = data.footer;
 
@@ -64,11 +64,6 @@ export function Footer({ data, onAdminOpen }) {
         <div className="foot-bot">
           <p>
             © {new Date().getFullYear()} <span>{data.brand}</span>. All rights reserved.
-          </p>
-          <p>
-            <span style={{ cursor: "pointer", color: "var(--muted2)" }} onClick={onAdminOpen}>
-              Admin ⚙
-            </span>
           </p>
         </div>
       </div>
